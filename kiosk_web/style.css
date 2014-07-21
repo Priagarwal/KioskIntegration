@@ -1,0 +1,81 @@
+body {
+  font-family: "Georgia", serif;
+  line-height: 1.8em;
+  color: black;
+  background-color: #C2D6FF;
+}
+ 
+#wrap {
+  width: 57em;
+  
+}
+.display
+{
+-moz-column-count:2; /* Firefox */
+-webkit-column-count:2; /* Safari and Chrome */
+column-count:2;
+
+-moz-column-gap:40px; /* Firefox */
+-webkit-column-gap:40px; /* Safari and Chrome */
+column-gap:40px;
+}
+ 
+textarea{
+  font-size: .8em;
+  width: 29em;
+  height: 15em;
+  margin: 1em 2em 2em 2em;
+  padding: 1em;
+  display: none;
+}
+ h1{
+   font-size: 2em;
+  }
+textarea {
+  font-family: Courier, fixed;
+}
+ 
+.template, .html, .data, .result {
+  float: left;
+}
+ face{
+  height: 2em;padding: 1em;font-size: 1em;color: white;background-color: black;border-radius: 25px;
+}
+ 
+.result div {
+left: 800px;
+	width: 29em;
+  height: 28em;
+  margin: 1em 2em 2em 2em;
+  padding: 1em;
+   font-size: 1em;
+   background-color: #009999;
+   border-radius: 25px;
+}
+.current div {
+	left: 800px;
+	width: 29em;
+  height: 15em;
+  margin: 1em 2em 2em 2em;
+  padding: 1em;
+   font-size: 1em;
+   background-color: green;
+   border-radius: 25px;
+}
+ 
+h3 {
+  display block;
+  margin: 2em 0 0 1.5em;
+}
+ 
+.process {
+  display: block;
+  clear: both;
+  margin: 1em 0;
+  width: 56em;
+  text-align: center;
+}
+ 
+button {
+  font-size: 1.5em; margin-top: 1em;
+}

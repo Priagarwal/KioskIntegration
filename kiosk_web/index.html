@@ -1,0 +1,54 @@
+
+<!doctype html> 
+<html> 
+  <head> 
+  <title>RPie Demo</title> 
+  <!--meta http-equiv="refresh" content="3" /-->
+  <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="./node_modules/mustache/mustache.js" ></script>
+  <script type="text/javascript" src="mustache-demos.js"></script>
+  <script type="text/javascript" src="checkedIn.js"></script>
+  <script type="text/javascript" src="recognized.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head> 
+<body onload = "process()"> 
+
+  <h1>Pay With PayPal</h1>
+
+  <!--div id="wrap"-->
+
+    <div class="template">
+
+      <textarea id="template">
+<h3>Checked In People:</h3>
+
+<ul>
+{{#people}}
+  <li>{{emailid}}</li>
+{{/people}}
+</ul>
+      </textarea>
+
+    </div>
+   
+    <div class="result">
+      <div id="result">
+	  </div>
+	</div>
+	  <!--div class="current" id="current">
+	  </div>
+
+  </div-->
+<div  style="float: left; width: 33%;">
+<div class="result">
+<input type="image" name="imgButton" id="imgButton" src="capture.jpg" style="border-radius: 25px;">
+<p style="height: 2em;font-size: 1.5em;padding:1em;text-align:center;border-radius: 25px;"><span id="current_user"></span><br></p>
+<script>
+document.getElementById("current_user").innerHTML=user.emailid  
+</script>
+</div>
+</div>
+
+</body>
+</html>
